@@ -70,9 +70,10 @@ select {
 }
 
 #row-one {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1rem;
+    padding-bottom: 1rem;
 }
 
 .content {
@@ -81,9 +82,10 @@ select {
 }
 
 #row-two {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1rem;
+    padding-bottom: 1rem;
 
 }
 
