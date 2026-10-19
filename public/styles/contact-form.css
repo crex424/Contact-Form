@@ -1,0 +1,120 @@
+
+@media only screen and (max-width: 600px) and (max-height: 900px) { 
+    body {
+        display: flex;
+        /* justify-content: flex-start; */
+        flex-flow: column wrap;
+    }
+    
+    main {
+        display: flex;
+        /* justify-content: flex-start; */
+        flex-flow: column wrap;
+        padding: 0%;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    #row-one {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #row-two {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    #row-three {
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: grey;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: -75rem;
+}
+
+select {
+    width: 100%;
+}
+
+#other {
+    width: 100%;
+}
+
+#main {
+    background-color: white;
+    width: 30%;
+    margin: 0 auto;
+    padding: 0 1rem 2rem 1rem;
+}
+
+#contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#row-one {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+#row-two {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+#row-three {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+#mailing-list {
+    padding-top: 1rem;
+}
+
+#submit-bn {
+    padding-top: 1rem;
+}
+
+#radio-btns{
+    padding-top: 1rem;
+}
+
+#check-box {
+    padding-top: 1rem;
+}
+
+ button {
+    padding: 0.5rem;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border: 0;
+    border-radius: 0.25rem;
+ }
