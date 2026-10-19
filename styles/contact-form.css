@@ -1,0 +1,77 @@
+* {
+    display: border-box;
+    /* background-color: gray; */
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-color: grey;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label {
+  display: block; /* makes label take full width */
+  margin-bottom: 5px; /* spacing before input */
+}
+
+input[type="text"], input[type="email"]{
+    width: 100%;
+    margin: 0rem 0rem 1rem 0rem;
+    padding: -75rem;
+}
+
+#main {
+    background-color: white;
+    width: 30%;
+    margin: 0 auto;
+    padding: 0 1rem 2rem 1rem;
+}
+
+#contact-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#row-one {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#row-two {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-top: 2rem;
+}
+
+#row-three {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#mailing-list {
+    padding: 1rem;
+}
+
+#submit-bn {
+    padding-top: 1rem;
+}
+
+ button {
+    padding: 0.5rem;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border: 0;
+    border-radius: 0.25rem;
+ }
