@@ -12,52 +12,70 @@
         <h1 id="header">Contact Form</h1>
         <form action="#" method="get" id="contact-form">
             <div id="row-one">
-                <label for="fname">First Name</label>
-                <input type="text" name="fname" id="fname">
-
-                <label for="lname">Last Name</label>
-                <input type="text" name="lname" id="lname">
-
-                <label for="job-title">Job Title</label>
-                <input type="text" name="job-title" id="job-title">
+                <div class="content">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div class="content">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="lname" id="lname">
+                </div>
+                <div class="content">
+                    <label for="job-title">Job Title</label>
+                    <input type="text" name="job-title" id="job-title">
+                </div>
             </div>
             <div id="row-two">
-                <label for="company">Company</label>
-                <input type="text" name="company" id="company">
-
-                <label for="linkedin">Linkedin URL</label>
-                <input type="url" name="linkedin" id="linkedin">
-
-                <label for="email">Email Address</label>
-                <input type="email" name="email" id="email">
+                 <div class="content">
+                    <label for="company">Company</label>
+                    <input type="text" name="company" id="company">
+                 </div>
+                
+                  <div class="content">
+                    <label for="linkedin">Linkedin URL</label>
+                    <input type="url" name="linkedin" id="linkedin">
+                  </div>
+                
+                <div class="content">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email">
+                </div>
             </div>
             <div id="row-three">
-                <label for="meet">How did we meet?</label>
-                <select name="meet" id="meet">
-                    <option value="none">Please select</option>
-                    <option value="person">In person</option>
-                    <option value="work">Work</option>
-                    <option value="school">School</option>
-                </select>
-
-                <label for="other">Other (please specify)</label>
-                <textarea rows="1" name="other" id="other"></textarea>
+                <div class="content">
+                    <label for="meet">How did we meet?</label>
+                    <select name="meet" id="meet">
+                        <option value="none">Please select</option>
+                        <option value="person">In person</option>
+                        <option value="work">Work</option>
+                        <option value="school">School</option>
+                    </select>
+                </div>
+                
+                <div class="content">
+                    <label for="other">Other (please specify)</label>
+                    <textarea rows="1" name="other" id="other"></textarea>
+                </div>
             </div>
             <label for="message">Message</label>
             <textarea rows="5" name="message" id="message"></textarea>
-
-            <label for="mailing-list">
+            <div id="check-box">
+                <label for="mailing-list">
                 <input type="checkbox" id="mailing-list" name="mailing-list" value="mailing-list">
                 Please add me to your mailing list
-            </label>
-
-            <label for="eformat">
-                Choose an email format:
-                <input type="radio" id="html" class="eformat" name="method" value="eformat">
-                HTML
-                <input type="radio" id="text" class="eformat" name="method" value="eformat">
-                Text
-            </label>
+                </label>
+            </div>
+            <div id="radio-btns">
+                <label for="html">
+                    Choose an email format:
+                    <input type="radio" id="html" class="eformat" name="method" value="HTML">
+                    HTML
+                </label>
+                <label for="text-format">
+                    <input type="radio" id="text-format" class="eformat" name="method" value="text">
+                    Text
+                </label>
+            </div>
             <div id="submit-bn">
                 <button type="submit">Submit</button>
             </div>
