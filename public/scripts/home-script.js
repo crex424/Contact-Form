@@ -14,10 +14,23 @@ document.getElementById("contact-form").onsubmit = () => {
         document.getElementById("err-lname").style.display = "block";
         isValid = false;
     }
+
+   
+
     let regex1 = /@/g;
     let regex2 = /\./g;
     let email = document.getElementById("email").value.trim();
+    // Checks whether the email entered has a @ or . entered.
+    // If it does not display error message.
     if (email != "" && email.search(regex1) == -1 || email != "" && email.search(regex2) == -1) {
+        document.getElementById("err-email").style.display = "block";
+        isValid = false;
+    }
+
+    // Checks whether the checkbox for email is checked.
+    // Email is required if checked.
+    let emailMethodBtn = document.getElementById("mailing-list");
+    if (emailMethodBtn.checked) {
         document.getElementById("err-email").style.display = "block";
         isValid = false;
     }
