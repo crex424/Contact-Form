@@ -17,12 +17,12 @@ document.getElementById("contact-form").onsubmit = () => {
 
    
 
-    let regex1 = /@/g;
-    let regex2 = /\./g;
+    let atRegex = /@/g;
+    let periodRegex = /\./g;
     let email = document.getElementById("email").value.trim();
     // Checks whether the email entered has a @ or . entered.
     // If it does not display error message.
-    if (email != "" && email.search(regex1) == -1 || email != "" && email.search(regex2) == -1) {
+    if (email != "" && email.search(atRegex) == -1 || email != "" && email.search(periodRegex) == -1) {
         document.getElementById("err-email").style.display = "block";
         isValid = false;
     }
@@ -34,6 +34,17 @@ document.getElementById("contact-form").onsubmit = () => {
         document.getElementById("err-email").style.display = "block";
         isValid = false;
     }
+
+    // Regex to find whether the string contains https://linkedin.com/in/
+    let linkedinRegex = /^(https?:\/\/)?((www\.)?([a-z]{2,3}\.)?linkedin\.com\/)(in)\/?$/
+    let linkedin = document.getElementById("linkedin").value.trim();
+    // If the text box contains something but doesn't contain https://linkedin.com/in/ error time.
+    if (linkedin != "" && linkedin.search(linkedinRegex) == -1) {
+        document.getElementById("err-linkedin").style.display = "block";
+        isValid = false;
+    }
+
+    
 
     return isValid;
 };
