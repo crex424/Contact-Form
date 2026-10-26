@@ -41,7 +41,7 @@
                   <div class="content">
                     <div class="label-err">
                         <label for="linkedin">Linkedin URL</label>
-                        <span id="err-linkedin" class="err">Please enter a valid Linkedin link</span>
+                        <span id="err-linkedin" class="err">Please enter a valid Linkedin link!</span>
                     </div>
                     <input type="text" name="linkedin" id="linkedin">
                   </div>
@@ -49,14 +49,17 @@
                 <div class="content">
                     <div class="label-err">
                         <label for="email">Email Address</label>
-                        <span id="err-email" class="err">Please enter a valid email</span>
+                        <span id="err-email" class="err">Please enter a valid email!</span>
                     </div>
                     <input type="text" name="email" id="email">
                 </div>
             </div>
             <div id="row-three">
                 <div class="content">
-                    <label for="meet">How did we meet?</label>
+                    <div class="label-err">
+                        <label for="meet">How did we meet?</label>
+                        <span id="err-meet" class="err">Please select how we met!</span>
+                    </div>
                     <select name="meet" id="meet">
                         <option value="none">Please select</option>
                         <option value="person">In person</option>

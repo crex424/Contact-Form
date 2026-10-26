@@ -43,8 +43,12 @@ document.getElementById("contact-form").onsubmit = () => {
         document.getElementById("err-linkedin").style.display = "block";
         isValid = false;
     }
-
-    
+    // Validate Where we met
+    let whereMet = document.getElementById("meet").value;
+    if (whereMet == "none") {
+        document.getElementById("err-meet").style.display = "block";
+        isValid = false
+    }
 
     return isValid;
 };
