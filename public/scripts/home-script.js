@@ -14,6 +14,13 @@ document.getElementById("contact-form").onsubmit = () => {
         document.getElementById("err-lname").style.display = "block";
         isValid = false;
     }
+    let regex1 = /@/g;
+    let regex2 = /\./g;
+    let email = document.getElementById("email").value.trim();
+    if (email != "" && email.search(regex1) == -1 || email != "" && email.search(regex2) == -1) {
+        document.getElementById("err-email").style.display = "block";
+        isValid = false;
+    }
 
     return isValid;
 };
