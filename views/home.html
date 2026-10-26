@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/contact-form.css">
     <link rel="shortcut icon" href="images/wrench-icon.jpg" type="image/x-icon">
+    <script src="scripts/home-script.js" defer></script>
     <title>Contact Form</title>
 </head>
 <body>
@@ -13,11 +14,17 @@
         <form action="#" method="get" id="contact-form">
             <div id="row-one">
                 <div class="content">
-                    <label for="fname">First Name</label>
+                    <div class="label-err">
+                        <label for="fname">First Name</label>
+                        <span id="err-fname" class="err">Please enter your first name!</span>
+                    </div>
                     <input type="text" name="fname" id="fname">
                 </div>
                 <div class="content">
-                    <label for="lname">Last Name</label>
+                    <div class="label-err">
+                        <label for="lname">Last Name</label>
+                        <span id="err-lname" class="err">Please enter your last name!</span>
+                    </div>
                     <input type="text" name="lname" id="lname">
                 </div>
                 <div class="content">
