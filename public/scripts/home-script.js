@@ -17,12 +17,11 @@ document.getElementById("contact-form").onsubmit = () => {
 
    
 
-    let atRegex = /@/g;
-    let periodRegex = /\./g;
+    let regex = /^[^@]+@[^@]+\.[^@]+$/;
     let email = document.getElementById("email").value.trim();
     // Checks whether the email entered has a @ or . entered.
     // If it does not display error message.
-    if (email != "" && email.search(atRegex) == -1 || email != "" && email.search(periodRegex) == -1) {
+    if (email != "" && email.search(regex) == -1) {
         document.getElementById("err-email").style.display = "block";
         isValid = false;
     }
@@ -30,13 +29,13 @@ document.getElementById("contact-form").onsubmit = () => {
     // Checks whether the checkbox for email is checked.
     // Email is required if checked.
     let emailMethodBtn = document.getElementById("mailing-list");
-    if (emailMethodBtn.checked) {
+    if (emailMethodBtn.checked && email == "") {
         document.getElementById("err-email").style.display = "block";
         isValid = false;
     }
 
     // Regex to find whether the string contains https://linkedin.com/in/
-    let linkedinRegex = /^(https?:\/\/)?((www\.)?([a-z]{2,3}\.)?linkedin\.com\/)(in)\/?$/
+    let linkedinRegex = /^(https?:\/\/)?(www\.)?linkedin\.com(\/(mwlite|\/m\/))?((in\/[a-zA-Z0-9_\-\.]+)|(company\/[a-zA-Z0-9_\-\.]+)|(pub\/[a-zA-Z0-9_\-\.]+\/[a-zA-Z0-9_\-\.]+\/?[0-9]+)?)/i;
     let linkedin = document.getElementById("linkedin").value.trim();
     // If the text box contains something but doesn't contain https://linkedin.com/in/ error time.
     if (linkedin != "" && linkedin.search(linkedinRegex) == -1) {
@@ -54,7 +53,7 @@ document.getElementById("contact-form").onsubmit = () => {
 };
 
 function clearErrors() {
-    let errors = document.getElementsByClassName("error");
+    let errors = document.getElementsByClassName("err");
     for (let i = 0; i < errors.length; i++) {
         errors[i].style.display = "none";
     }
