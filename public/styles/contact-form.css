@@ -40,6 +40,7 @@ body {
     background-color: grey;
     margin: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
 }
 
 input[type="text"], input[type="email"] {
@@ -58,9 +59,10 @@ select {
 
 #main {
     background-color: white;
-    width: 60%;
     margin: 0 auto;
-    padding: 0 1rem 2rem 1rem;
+    width: 99%;
+    padding: 0.5rem;
+    flex: 1;
 }
 
 #contact-form {
@@ -130,4 +132,19 @@ select {
  .err {
     color: red;
     display: none;
+ }
+
+ footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+ }
+
+ footer button {
+    background-color: grey;
  }
