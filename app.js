@@ -14,30 +14,37 @@ const guests = [];
 // Enable static file serving
 app.use(express.static('public'));
 
+app.set('view engine', 'ejs');
+
 app.use(express.urlencoded({ extended: true}));
 
 // Define a default route ("/")
 app.get('/', (req, res) => {
-    res.sendFile(`${import.meta.dirname}/views/home.html`);
+    res.render('home');
 });
 
 app.get('/confirm', (req, res) => {
-    res.sendFile(`${import.meta.dirname}/views/confirm.html`);
+    res.render('confirm');;
 });
 
 app.get('/admin', (req, res) => {
-    res.send(guests);
+    res.render('admin', {guests});
+});
+
+app.get('/contact', (req, res) => {
+    res.render('contact');
 });
 
 app.post('/confirm',(req, res) => {
     console.log(req.body);
 
     const guest = req.body;
+    guest['timestamp'] = new Date();
 
     guests.push(guest);
     console.log(guest);
 
-     res.sendFile(`${import.meta.dirname}/views/confirm.html`);
+     res.render('confirm', {guest, guests});
 });
 
 // Start the server on the designated port
