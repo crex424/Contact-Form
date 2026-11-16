@@ -30,11 +30,19 @@
         flex-flow: column wrap;
     }
 } */
+*{
+    box-sizing: border-box;
+}
+:root {
+    --primary-bg-color: azure;
+    --primary-color: black;
+}
 
-#header {
+
+/* #header {
     display: flex;
     justify-content: center;
-}
+} */
 
 body {
     background-color: grey;
@@ -148,3 +156,184 @@ select {
  footer button {
     background-color: grey;
  }
+
+ #portfolio-header > #nav-group {
+    background-color: lightskyblue;
+    padding: 1rem 0.5rem;
+    margin: 1rem 0;
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    #job-nav{
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+
+    }
+    a {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 0.2rem;
+        list-style-type: none;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:600;
+        padding: 0.75rem;
+    }
+
+    a:hover {
+        background: rgb(209, 207, 207);
+    }
+}
+
+/* Resume Styles */
+img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+a:hover {
+    background-color: darkgray;
+}
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1em;
+}
+
+body {
+    margin: auto;
+    background-color: var(--primary-bg-color);
+
+}
+
+p {
+    font-size:small;
+}
+
+h3 {
+    font-size: large;
+    margin-bottom: 0%;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+#summary-text {
+    font-size: large;
+}
+
+ul {
+    line-height: 0.95em;
+    list-style: square;
+}
+.relevant-classwork {
+    display: flex;
+    flex-flow: column wrap;
+    line-height: 0.01em;
+    font-size: small;
+    margin:0%;
+
+}
+
+.college-info  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 0%;
+    
+}
+
+.graduation {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+}
+
+#contact-info {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: .5em;
+}
+
+#contact-info h3 {
+    padding-right: 1em;
+    padding-bottom: 0em;
+    margin: 0%;
+}
+
+#resume-main {
+    background-color: white;
+    border: solid black .1rem;
+    margin: 0 auto;
+    width: 60%;
+    padding: 0.5rem;
+    flex: 1;
+}
+
+#projects {
+    display: flex;
+    justify-content:flex-start;
+    flex-flow: column wrap;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Confirm page css */
+.box {
+    background-color: white;
+    border: solid black .1rem;
+    margin: 0 auto;
+    width: 60%;
+    padding: 0.5rem;
+    flex: 1;
+}
+
+/* Admin page */
+#contact-body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main-content {
+    margin: 1rem auto;
+    width: 99%;
+    padding: 0.5rem;
+    flex: 1;
+}
+
+thead {
+    background-color: var(--forestgreen);
+    border: 0;
+    border-radius: 2rem;
+    color: white;
+}
+
+table {
+    border-collapse:separate;
+    border:solid black 1px;
+    border-radius:6px;
+    background-color: white;
+}
+
+td, th {
+    border-left:solid black 1px;
+    border-top:solid black 1px;
+}
+
+th {
+    color: black;
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
