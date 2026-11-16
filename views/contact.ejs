@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/contact-form.css">
+    <link rel="shortcut icon" href="images/wrench-icon.jpg" type="image/x-icon">
+    <script src="scripts/home-script.js" defer></script>
+    <title>Contact Form</title>
+</head>
+<body>
+    <%-include('partials/header.ejs') %>
+    <main id="main">
+        <h1 id="header">Contact Form</h1>
+        <form action="/confirm" method="post" id="contact-form">
+            <div id="row-one">
+                <div class="content">
+                    <div class="label-err">
+                        <label for="fname">First Name</label>
+                        <span id="err-fname" class="err">Please enter your first name!</span>
+                    </div>
+                    <input type="text" name="fname" id="fname">
+                </div>
+                <div class="content">
+                    <div class="label-err">
+                        <label for="lname">Last Name</label>
+                        <span id="err-lname" class="err">Please enter your last name!</span>
+                    </div>
+                    <input type="text" name="lname" id="lname">
+                </div>
+                <div class="content">
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" name="jobTitle" id="jobTitle">
+                </div>
+            </div>
+            <div id="row-two">
+                 <div class="content">
+                    <label for="company">Company</label>
+                    <input type="text" name="company" id="company">
+                 </div>
+                
+                  <div class="content">
+                    <div class="label-err">
+                        <label for="linkedin">Linkedin URL</label>
+                        <span id="err-linkedin" class="err">Please enter a valid Linkedin link!</span>
+                    </div>
+                    <input type="text" name="linkedin" id="linkedin">
+                  </div>
+                
+                <div class="content">
+                    <div class="label-err">
+                        <label for="email">Email Address</label>
+                        <span id="err-email" class="err">Please enter a valid email!</span>
+                    </div>
+                    <input type="text" name="email" id="email">
+                </div>
+            </div>
+            <div id="row-three">
+                <div class="content">
+                    <div class="label-err">
+                        <label for="meet">How did we meet?</label>
+                        <span id="err-meet" class="err">Please select how we met!</span>
+                    </div>
+                    <select name="meet" id="meet">
+                        <option value="none">Please select</option>
+                        <option value="person">In person</option>
+                        <option value="work">Work</option>
+                        <option value="school">School</option>
+                    </select>
+                </div>
+                
+                <div class="content">
+                    <label for="other">Other (please specify)</label>
+                    <textarea rows="1" name="other" id="other"></textarea>
+                </div>
+            </div>
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message"></textarea>
+            <div id="check-box">
+                <label for="mailing-list">
+                <input type="checkbox" id="mailingList" name="mailingList" value="yes">
+                Please add me to your mailing list
+                </label>
+            </div>
+            <div id="radio-btns">
+                <div id="emailFormat">
+                    <label for="html">
+                        Choose an email format:
+                        <input type="radio" id="htmlFormat" class="eformat" name="emailFormat" value="HTML">
+                        HTML
+                    </label>
+                    <label for="text-format">
+                        <input type="radio" id="textFormat" class="eformat" name="emailFormat" value="text">
+                        Text
+                    </label>
+                </div>
+            </div>
+            <div id="submit-bn">
+                <button type="submit">Submit</button>
+            </div>
+            
+        </form>
+    </main>
+    <footer><button onclick="location.href='https://github.com/crex424/Contact-Form'">Github</button></footer>
+</body>
+</html>
