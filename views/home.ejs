@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Favcon.png">
+    <link rel="stylesheet" href="styles/contact-form.css">
+    <title>Campbell's Resume</title>
+</head>
+<body>
+    <%-include('partials/header.ejs') %>
+    <main id="resume-main">
+        <div id="summary">
+            <img src="images/me.jpg" alt="Picture Of Campbell Smiling">
+            <h1>Campbell Rex</h1>
+            <hr>
+            <h2>Summary/Contact Info:</h2>
+            <div id="contact-info">
+                <h3>Phone Number: (209) 238-8347</h3>
+                <h3>Email: campbellrex@outlook.com</h3>
+                <h3><a href="https://www.linkedin.com/in/campbell-rex-aa7803283/">Linkedin</a></h3>
+                <h3><a href="https://github.com/crex424?tab=repositories">GitHub</a></h3>
+            </div>
+        </div>
+
+        <p id="summary-text">Software Developer in training eager to work on data-driven websites.</p>
+        <hr>
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Languages: Java, C#, JavaScript, HTML/CSS, TypeScript, C++, Kotlin, SQL</li>
+            <li>Web: BootStrap, .NET core, ASP.NET, jQuery SQL Server</li>
+            <li>Tools: Git, GitHub, Visual Studio, Visual Studio Code,  Microsoft SQL Server Management Studio 18</li>
+            <li>Soft Skills: Communication, Teamwork, Time Management, Self Management, Critical Thinking</li>
+        </ul>
+        <hr>
+        <div id="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+                <h3>EasyAppointmentManager Website</h3>
+                <p>April 2023 - August 2023</p>
+                <ul>
+                    <li>Developed a full-stack web application using MVC pattern to design, and manage the frontend and backend more efficiently </li>
+                    <li>Utilized agile development to manage the project</li>
+                    <li>Implemented EF Core to optimize management of custom database</li>
+                    <li>Applied ASP.NET Identity to restrict access to sensitive information for users while giving admin accounts access to all data for efficient management of information</li>
+                    <li>Producing this project helped me improve my skills with EF Core, Website development, Identity, MVC pattern, and working with a team to develop a application using GitHub</li>
+                </ul>
+            </div>
+            <div class="project-item">
+                <h3>LibraryBookRegisterForm</h3>
+                <p>January 2023 - March 2023</p>
+                <ul>
+                    <li>Developed a full-stack Windows Form application using ADO.NET to manage CRUD functionality </li>
+                    <li>Connected console app with existing database </li>
+                    <li>Applied CRUD functionality to a console app, improved my skills with C#, Backend & Frontend development, and learned how to work with team members using GitHub</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <hr>
+        <h2>Education</h2>
+        <h3>Bachelor's in Software Development</h3>
+        <div class="college-info">
+            <p><i>Green River College</i> -- Auburn, WA</p>  
+            <p>Expected Graduation 2028</p>
+        </div>
+        <div class="relevant-classwork">
+            <h4>Relevant Coursework:</h4>
+            <ul>
+                <li>Object Oriented Programming</li>
+                <li>Data Structure</li>
+                <li>Systems Programming(Through GameBoy Advanced)</li>
+            </ul>
+        </div>
+        <h3>Associate of Applied Technology(Computer Programming)</h3>
+        <div class="college-info">
+            <p><i>Clover Park Technical College</i> -- Lakewood WA</p> 
+            <p>September 2021 - August 2023 </p>
+        </div>
+        <div class="relevant-classwork">
+            <p>Graduated with honors</p>
+            <h4>Relevant Coursework:</h4>
+            <ul>
+                <li>Object oriented programming</li>
+                <li>Advanced SQL programming</li>
+                <li>Full Stack website development</li>
+                <li>Dynamic Database design</li>
+            </ul>
+        </div>
+        <hr>
+        <h2>Experience</h2>
+        <div class="work-exp">
+            <p><i>Chick Fil A</i> -- Puyallup WA</p> <p>September 2021 - August 2023 </p>
+        </div>
+        
+        <ul>
+            <li>Communicated with fellow employee's to prepare food quickly</li>
+            <li>Prepared food with 90% accuracy</li>
+            <li>Used time management skills to complete tasks when time allowed.</li>
+            <li>Helped the store earn over 40,000 dollars in a day</li>
+        </ul>
+    </main>
+</body>
+</html>
